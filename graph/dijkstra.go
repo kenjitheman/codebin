@@ -50,7 +50,7 @@ func minDistance(dist []int, visited []bool) int {
 	return minIndex
 }
 
-func Dijkst() {
+func TryDijkstra() {
 	g := &Graph_{
 		Vertices: 5,
 		Matrix: [][]int{

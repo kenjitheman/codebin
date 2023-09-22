@@ -4,21 +4,21 @@ import (
 	"fmt"
 )
 
-type Node struct {
+type Node__ struct {
 	Data int
-	Next *Node
+	Next *Node__
 }
 
-type Stack struct {
-	Top *Node
+type Stack_ struct {
+	Top *Node__
 }
 
-func (s *Stack) Push(val int) {
-	newNode := &Node{Data: val, Next: s.Top}
+func (s *Stack_) Push(val int) {
+	newNode := &Node__{Data: val, Next: s.Top}
 	s.Top = newNode
 }
 
-func (s *Stack) Pop() int {
+func (s *Stack_) Pop() int {
 	if s.Top == nil {
 		return -1
 	}
@@ -28,7 +28,7 @@ func (s *Stack) Pop() int {
 }
 
 func TryStackLL() {
-	stack := Stack{}
+	stack := Stack_{}
 	stack.Push(1)
 	stack.Push(2)
 	stack.Push(3)
