@@ -1,7 +1,5 @@
 package dataman
 
-import "fmt"
-
 type Queue []int
 
 func (q *Queue) Enqueue(val int) {
@@ -17,12 +15,12 @@ func (q *Queue) Dequeue() int {
 	return val
 }
 
-func TryQueue() {
-	queue := Queue{}
-	queue.Enqueue(1)
-	queue.Enqueue(2)
-	queue.Enqueue(3)
-
-	fmt.Println(queue.Dequeue())
-	fmt.Println(queue.Dequeue())
-}
+// func TryQueue() {
+// 	queue := Queue{}
+// 	queue.Enqueue(1)
+// 	queue.Enqueue(2)
+// 	queue.Enqueue(3)
+//
+// 	fmt.Println(queue.Dequeue())
+// 	fmt.Println(queue.Dequeue())
+// }

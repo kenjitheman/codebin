@@ -34,11 +34,11 @@ func (dll *DoublyLinkedList) Display() {
 	fmt.Println("nil")
 }
 
-func TryDLL() {
-	dll := DoublyLinkedList{}
-	dll.Append(1)
-	dll.Append(2)
-	dll.Append(3)
-
-	dll.Display()
-}
+// func TryDLL() {
+// 	dll := DoublyLinkedList{}
+// 	dll.Append(1)
+// 	dll.Append(2)
+// 	dll.Append(3)
+//
+// 	dll.Display()
+// }
