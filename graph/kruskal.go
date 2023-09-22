@@ -47,7 +47,7 @@ func find(parent []int, i int) int {
 	return i
 }
 
-func main() {
+func TryKruskal() {
 	g := &Graph__{
 		Vertices: 4,
 		Edges: []Edge{

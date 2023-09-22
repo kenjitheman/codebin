@@ -17,7 +17,7 @@ func (g *Graph) DFS(v int, visited []bool) {
 	}
 }
 
-func Try() {
+func TryDFS() {
 	g := &Graph{
 		Vertices: 4,
 		AdjList:  make([]*list.List, 4),

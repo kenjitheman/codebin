@@ -28,7 +28,7 @@ func (g *Graph) BFS(v int) {
 	}
 }
 
-func Tryman() {
+func TryBFS() {
 	g := &Graph{
 		Vertices: 4,
 		AdjList:  make([]*list.List, 4),
