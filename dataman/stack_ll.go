@@ -1,9 +1,5 @@
 package dataman
 
-import (
-	"fmt"
-)
-
 type Node__ struct {
 	Data int
 	Next *Node__
@@ -27,12 +23,12 @@ func (s *Stack_) Pop() int {
 	return val
 }
 
-func TryStackLL() {
-	stack := Stack_{}
-	stack.Push(1)
-	stack.Push(2)
-	stack.Push(3)
-
-	fmt.Println(stack.Pop())
-	fmt.Println(stack.Pop())
-}
+// func TryStackLL() {
+// 	stack := Stack_{}
+// 	stack.Push(1)
+// 	stack.Push(2)
+// 	stack.Push(3)
+//
+// 	fmt.Println(stack.Pop())
+// 	fmt.Println(stack.Pop())
+// }
