@@ -14,13 +14,3 @@ func (s *Stack) Pop() int {
 	*s = (*s)[:len(*s)-1]
 	return val
 }
-
-// func TryStackSlice() {
-// 	stack := Stack{}
-// 	stack.Push(1)
-// 	stack.Push(2)
-// 	stack.Push(3)
-//
-// 	fmt.Println(stack.Pop())
-// 	fmt.Println(stack.Pop())
-// }

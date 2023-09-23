@@ -98,19 +98,27 @@ func inorderTraversal(root *TreeNode) []int {
 	return result
 }
 
-// func TryBTree() {
-// 	binaryTree := NewBinaryTree()
-// 	binaryTree.Insert(5)
-// 	binaryTree.Insert(3)
-// 	binaryTree.Insert(7)
-// 	binaryTree.Insert(2)
-// 	binaryTree.Insert(4)
-// 	binaryTree.Insert(6)
-// 	binaryTree.Insert(8)
-//
-// 	fmt.Println("In-Order Traversal:")
-// 	binaryTree.InOrderTraversal(binaryTree.Root)
-//
-// 	fmt.Println("\nSearching for 4:", binaryTree.Search(4))
-// 	fmt.Println("Searching for 9:", binaryTree.Search(9))
-// }
+func postorderTraversal(root *TreeNode) []int {
+	stack := []*TreeNode{}
+	result := []int{}
+	prevVisited := (*TreeNode)(nil)
+
+	for len(stack) > 0 || root != nil {
+		if root != nil {
+			stack = append(stack, root)
+			root = root.Left
+		} else {
+			top := stack[len(stack)-1]
+
+			if top.Right == nil || top.Right == prevVisited {
+				result = append(result, top.Value)
+				prevVisited = top
+				stack = stack[:len(stack)-1]
+			} else {
+				root = top.Right
+			}
+		}
+	}
+
+	return result
+}
