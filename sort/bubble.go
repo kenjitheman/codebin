@@ -1,6 +1,6 @@
 package sort
 
-func BubbleSort(arr []int) {
+func BubbleSort(arr []int) []int {
 	n := len(arr)
 	for i := 0; i < n-1; i++ {
 		swapped := false
@@ -14,4 +14,5 @@ func BubbleSort(arr []int) {
 			break
 		}
 	}
+	return arr
 }

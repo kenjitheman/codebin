@@ -1,6 +1,6 @@
 package sort
 
-func InsertionSort(arr []int) {
+func InsertionSort(arr []int) []int {
 	n := len(arr)
 	for i := 1; i < n; i++ {
 		temp := arr[i]
@@ -11,4 +11,5 @@ func InsertionSort(arr []int) {
 		}
 		arr[j+1] = temp
 	}
+	return arr
 }
