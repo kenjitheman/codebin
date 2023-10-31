@@ -1,4 +1,4 @@
-package dataman
+package btree
 
 type TreeNode struct {
 	Value int

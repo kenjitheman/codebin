@@ -1,4 +1,4 @@
-package dataman
+package htable
 
 type HashTable struct {
 	data map[string]int

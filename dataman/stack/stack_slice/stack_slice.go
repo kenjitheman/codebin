@@ -1,4 +1,4 @@
-package dataman
+package stack_slice
 
 type Stack []int
 

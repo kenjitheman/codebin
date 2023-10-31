@@ -1,4 +1,4 @@
-package dataman
+package queue_slice
 
 type Queue []int
 
