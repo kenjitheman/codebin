@@ -1,20 +1,20 @@
-package dataman
+package dll
 
 import "fmt"
 
-type Node_ struct {
+type Node struct {
 	Data int
-	Prev *Node_
-	Next *Node_
+	Prev *Node
+	Next *Node
 }
 
 type DoublyLinkedList struct {
-	Head *Node_
-	Tail *Node_
+	Head *Node
+	Tail *Node
 }
 
 func (dll *DoublyLinkedList) Append(data int) {
-	newNode := &Node_{Data: data, Prev: nil, Next: nil}
+	newNode := &Node{Data: data, Prev: nil, Next: nil}
 	if dll.Head == nil {
 		dll.Head = newNode
 		dll.Tail = newNode

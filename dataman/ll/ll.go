@@ -1,7 +1,7 @@
-package dataman
+package ll
 
 type Node struct {
-	Value int
+	Val  int
 	Next *Node
 }
 
@@ -10,7 +10,7 @@ type LinkedList struct {
 }
 
 func (ll *LinkedList) Append(data int) {
-	newNode := &Node{Value: data, Next: nil}
+	newNode := &Node{Val: data, Next: nil}
 	if ll.Head == nil {
 		ll.Head = newNode
 		return
