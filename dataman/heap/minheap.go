@@ -32,22 +32,22 @@ func (h *MinHeap) HeapifyUp(idx int) {
 }
 
 func (h *MinHeap) HeapifyDown(idx int) {
-    for h.LeftChild(idx) < h.length {
-        left := h.LeftChild(idx)
-        right := h.RightChild(idx)
-        if right < h.length && h.data[right] < h.data[left] {
-            left = right
-        }
-        if h.data[idx] < h.data[left] {
-            break
-        }
-        h.data[idx], h.data[left] = h.data[left], h.data[idx]
-        idx = left
-    }
+	for h.LeftChild(idx) < h.length {
+		left := h.LeftChild(idx)
+		right := h.RightChild(idx)
+		if right < h.length && h.data[right] < h.data[left] {
+			left = right
+		}
+		if h.data[idx] < h.data[left] {
+			break
+		}
+		h.data[idx], h.data[left] = h.data[left], h.data[idx]
+		idx = left
+	}
 }
 
 func (h *MinHeap) Insert(val int) {
-    h.data = append(h.data, val)
-    h.length++
-    h.HeapifyUp(h.length - 1)
+	h.data = append(h.data, val)
+	h.length++
+	h.HeapifyUp(h.length - 1)
 }
