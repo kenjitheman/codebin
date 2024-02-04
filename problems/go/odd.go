@@ -1,4 +1,4 @@
-package some
+package problems
 
 func FindOdd(seq []int) int {
 	res := 0
