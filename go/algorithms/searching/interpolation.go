@@ -1,5 +1,9 @@
-package search
+package searching
 
+// InterpolationSearch returns the index of the target in the given array or -1 if not found
+// The array must be sorted
+// The time complexity is O(log(log(n))) on average
+// The space complexity is O(1)
 func InterpolationSearch(arr []int, target int) int {
 	left, right := 0, len(arr)-1
 

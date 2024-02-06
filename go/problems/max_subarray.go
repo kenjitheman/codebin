@@ -10,7 +10,7 @@ func FindMaxSubarray(arr []int) []int {
     var maxStartIndex int
     var maxEndIndex int
     var currentStartIndex int
-    var currentEndIndex int
+    // var currentEndIndex int
 
     for i := 0; i < len(arr); i++ {
         if currentSum <= 0 {
