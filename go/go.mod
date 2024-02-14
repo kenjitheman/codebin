@@ -1,3 +1,3 @@
-module github.com/btwkenji/codegen
+module github.com/plastiey/codegen
 
 go 1.21.6

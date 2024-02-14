@@ -12,21 +12,17 @@ func TwoSum(nums []int, target int) []int {
 	return nil
 }
 
-var nums = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
-var target = 7
-
-func TwoSumSorted(nums []int, target int) []int { 
-	s := 0 
-	e := len(nums) - 1
-	for s < e {
-		sum := nums[s] + nums[e]
-		if sum == target {
-			return []int{s, e}
-		} else if sum < target {
-			s++
-		} else {
-			e--
-		}
-	}
-	return nil
+func TwoSumSorted(nums []int, target int) []int {
+    s, e := 0, len(nums)-1
+    for s < e {
+        sum := nums[s] + nums[e]
+        if sum == target {
+            return []int{s, e}
+        } else if sum < target {
+            s++
+        } else {
+            e--
+        }
+    }
+    return nil
 }
